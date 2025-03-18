@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Theme_Data.dart';  // استيراد ملف theme_data.dart
 import 'Login screen/SplashScreen.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // إخفاء شريط "debug"
+      theme: appTheme(), // استخدام Theme من Theme_Data.dart
       home: SplashScreen(), // بداية التطبيق مع شاشة السبلاش
     );
   }
